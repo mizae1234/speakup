@@ -4,14 +4,20 @@ export default function Footer() {
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
                 <div className="flex flex-col items-center text-center space-y-6">
                     {/* Logo */}
-                    <div className="flex items-center gap-3">
-                        <div className="relative h-12 w-40 grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                    <div className="flex items-center gap-4">
+                        <div className="relative h-28 w-auto grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
                             <img
                                 src="/LOGO_GI.png"
                                 alt="Gold Integrate Co., Ltd."
                                 className="h-full w-full object-contain"
                             />
                         </div>
+                    </div>
+
+                    {/* SpeakUp + Subtitle */}
+                    <div className="flex flex-col items-center gap-1 -mt-2">
+                        <span className="text-xl font-bold gradient-text">SpeakUp</span>
+                        <span className="text-sm text-gray-400">บริษัท โกลด์ อินทิเกรท จำกัด</span>
                     </div>
 
                     {/* Confidentiality message */}

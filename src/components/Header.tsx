@@ -22,16 +22,19 @@ export default function Header() {
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16 lg:h-20">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center gap-3 group">
-                        <div className="relative h-10 w-32 transition-transform group-hover:scale-105">
+                    <Link href="/" className="flex items-center gap-4 group">
+                        <div className="relative h-16 lg:h-20 w-auto transition-transform group-hover:scale-105">
                             <img
                                 src="/LOGO_GI.png"
                                 alt="Gold Integrate Co., Ltd."
                                 className="h-full w-full object-contain object-left"
                             />
                         </div>
-                        <div className="h-6 w-px bg-gray-200" />
-                        <span className="text-xl font-bold gradient-text">SpeakUp</span>
+                        <div className="h-10 w-px bg-gray-200" />
+                        <div className="flex flex-col">
+                            <span className="text-xl font-bold gradient-text leading-none">SpeakUp</span>
+                            <span className="text-xs text-gray-500 font-medium mt-0.5">บริษัท โกลด์ อินทิเกรท จำกัด</span>
+                        </div>
                     </Link>
 
                     {/* Nav Links */}
