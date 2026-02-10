@@ -3,6 +3,7 @@ version: '3.8'
 services:
   app:
     container_name: speakup-web
+    image: ghcr.io/mizae1234/speakup:latest
     build:
       context: .
       dockerfile: Dockerfile
