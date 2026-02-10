@@ -22,23 +22,17 @@ export default function Header() {
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16 lg:h-20">
                     {/* Logo */}
-                    <div className="flex items-center gap-3">
-                        <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                            <svg
-                                width="20"
-                                height="20"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="white"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            >
-                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-                            </svg>
+                    <Link href="/" className="flex items-center gap-3 group">
+                        <div className="relative h-10 w-32 transition-transform group-hover:scale-105">
+                            <img
+                                src="/LOGO_GI.png"
+                                alt="Gold Integrate Co., Ltd."
+                                className="h-full w-full object-contain object-left"
+                            />
                         </div>
+                        <div className="h-6 w-px bg-gray-200" />
                         <span className="text-xl font-bold gradient-text">SpeakUp</span>
-                    </div>
+                    </Link>
 
                     {/* Nav Links */}
                     <nav className="hidden md:flex items-center gap-8">
