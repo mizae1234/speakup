@@ -1,4 +1,4 @@
-const { defineConfig } = require('@prisma/config');
+const { defineConfig } = require('prisma/config');
 
 module.exports = defineConfig({
   schema: "prisma/schema.prisma",
