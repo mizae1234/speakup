@@ -49,7 +49,6 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
 # Copy Prisma schema and migrations for startup script
 COPY --from=builder /app/prisma ./prisma
-COPY --from=builder /app/prisma.config.js ./prisma.config.js
 COPY --from=builder /app/start.sh ./start.sh
 
 USER nextjs
